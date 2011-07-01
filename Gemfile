@@ -5,12 +5,17 @@ gem 'rails', '3.0.9'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql2', '~> 0.2.6'
+#gem 'mysql2', '~> 0.2.6'
+gem 'sqlite3'
 
 #Authentication
 gem 'devise'
 gem 'cancan'
+
+#
 gem 'jquery-rails'
+#http://stackoverflow.com/questions/6464313/noob-capybara-rspec-warning-regexp-match-n-against-to-utf-8-string
+gem 'escape_utils'	
 
 
 # Use unicorn as the web server
@@ -34,13 +39,15 @@ gem 'jquery-rails'
 # and rake tasks are available in development mode:
 group :development, :test do
   gem 'capybara'
-  gem 'cucumber'
+  #gem 'cucumber'
   gem 'cucumber-rails'
-  gem 'rspec'
+  #gem 'rspec'
   gem 'rspec-rails'
   gem 'shoulda'
-  gem 'factory_girl'
+  #gem 'factory_girl'
   gem 'factory_girl_rails'
   gem 'autotest'
   gem 'annotate'  ##gem 'annotate-models' does not work anymore
+  gem 'database_cleaner'
+  gem 'launchy'
 end
