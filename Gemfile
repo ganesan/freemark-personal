@@ -13,8 +13,6 @@ gem 'cancan'
 gem 'jquery-rails'
 
 
-
-
 # Use unicorn as the web server
 # gem 'unicorn'
 
@@ -44,5 +42,5 @@ group :development, :test do
   gem 'factory_girl'
   gem 'factory_girl_rails'
   gem 'autotest'
-  gem 'annotate'  # #gem 'annotate-models' does not work anymore
+  gem 'annotate'  ##gem 'annotate-models' does not work anymore
 end
